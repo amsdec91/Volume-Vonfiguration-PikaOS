@@ -1,0 +1,9 @@
+[Unit]
+Description=Audio Volume Fixes
+
+[Service]
+ExecStart=%h/.local/bin/Volume-Master.sh
+Restart=always
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,14 @@
+[Unit]
+Description=Lavalink Server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/amsdec91/BeatDock/Lavalink
+ExecStart=/usr/bin/java -jar Lavalink.jar
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target

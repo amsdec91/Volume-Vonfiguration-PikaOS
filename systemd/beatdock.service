@@ -1,0 +1,15 @@
+[Unit]
+Description=BeatDock Discord Bot
+After=lavalink.service
+Requires=lavalink.service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/amsdec91/BeatDock
+ExecStart=/usr/bin/node src/index.js
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target
+
